@@ -1,0 +1,24 @@
+.textfont {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.lista {
+  font-size: 20px;
+  padding: 1px;
+  border-radius: 10px;
+}
+.header {
+    color: white;
+    font-size: 32px;
+    background-color: black;
+    font-weight: bold;
+    padding: 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
