@@ -1,3 +1,4 @@
+/*Estilização global do site*/
 * {
     color: white;
     background-color: #282c34; 
@@ -6,17 +7,39 @@
     margin: 0;
 }
 
-header {
-    background-color: black;
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    padding: 10px;
-    margin-bottom: 5px;
+/* Mantem o header grudado*/
+nav {
+  position: sticky;
+  top: 0;
+}
+/* Container do header*/
+.header {
+  display: flex;
+  padding: 12px;
+  border-bottom: 1px solid #ffffff;
+}
+/* estiliza o texto do header */
+.logo,
+.top {
+  list-style-type: none;
 }
 
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.top{
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.logo a:link,
+.top a:link {
+  text-decoration: none;
+}
+/* Borda de container */
 .borda {
   text-align: justify;
   width: auto;
@@ -27,9 +50,8 @@ header {
   padding: 25px;
   margin: 5px;
 }
-
+/* Estiliza lista da home*/
 .borda.lista {
-  display: inline-block;
   font-size: 20px;
   padding: 50px;
 }
@@ -38,8 +60,14 @@ header {
   list-style-type: none;
   padding: 0;
 }
-
+/* Tamanho padrão de imagem*/
 img {
   width: 300px;
   height: auto;
+}
+
+/*Titulo da aba*/
+h3 {
+  margin-left: 5px;
+  margin-top: 10px;
 }
