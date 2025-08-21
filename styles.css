@@ -1,52 +1,77 @@
 /*Estilização global do site*/
 * {
-    color: white;
-    background-color: #282c34; 
-    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: content-box;
 }
 
-/* Mantem o header grudado*/
-nav {
-  position: sticky;
-  top: 0;
-}
-/* Container do header*/
-.header {
-  display: flex;
-  padding: 12px;
-  border-bottom: 1px solid #ffffff;
-}
-/* estiliza o texto do header */
-.logo,
-.top {
-  list-style-type: none;
+body {
+  margin: 0;
+  color: white;
+  background-color: #333;
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.logo {
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: auto;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
-.top{
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-.logo a:link,
-.top a:link {
+a,
+a:visited,
+a:active {
+  color: white;
+  padding: 0;
+  margin: 0;
   text-decoration: none;
 }
+
+a:hover {
+  color: #ffcc00;
+}
+
+/* Estiliza o cabeçalho*/
+nav {
+  background: #333;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ffffff;
+  padding: 12px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  font-size: 16px;
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+/*Estiliza a caixa de pesquisa das abas*/
+nav input[type="search"] {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #444;
+  color: white;
+  flex-grow: 1;
+}
+
 /* Borda de container */
 .borda {
-  text-align: justify;
   width: auto;
   height: auto;
   border: 1px solid white;
   border-radius: 10px;
-  display: block;
   padding: 10px 25px 25px 25px;
   margin: 5px;
   margin-bottom: 20px;
